@@ -1,3 +1,0 @@
-include ':tape'
-
-rootProject.name = 'tape-parent'
