@@ -2,11 +2,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ch.iterate.tape</groupId>
     <artifactId>tape</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.1</version>
     <scm>
         <connection>scm:git:https://github.com/iterate-ch/tape.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/iterate-ch/tape.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>tape-2.0.1</tag>
     </scm>
     <build>
         <extensions>
