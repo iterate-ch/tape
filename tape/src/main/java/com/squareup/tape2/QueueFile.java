@@ -459,7 +459,7 @@ public final class QueueFile implements Closeable, Iterable<byte[]> {
       FileChannel channel = raf.getChannel();
       channel.position(fileLength); // destination position
       count = endOfLastElement - headerLength;
-      if (channel.transferTo(headerLength, count, channel) != count) {
+      if (channel.transferTo(headerLength, count, new WritableByteChannelProxy(channel)) != count) {
         throw new AssertionError("Copied insufficient number of bytes!");
       }
     }
